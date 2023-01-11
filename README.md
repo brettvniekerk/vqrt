@@ -20,6 +20,12 @@ The framework of choice is [React](https://reactjs.org), paired with [Vite](http
 
 Run the project with `yarn dev`, and build it with `yarn build`. It will create a `dist` folder that you can serve with `yarn preview`, and/or host on your own server or platform.
 
+## Roadmap
+
+1. Implementing SSR
+2. Containerization
+3. Bundling my WIP UI library
+
 ## Considerations
 
 The template contains a `vercel.json` file that contains basic config for SPA's (similar configurations may not be necessary for other platforms):
@@ -65,12 +71,6 @@ export const Dashboard = lazy(() => import("./pages/Dashboard"));
 export const About = lazy(() => import("./pages/About"));
 export const NotFound = lazy(() => import("./pages/NotFound"));
 ```
-
-## Future Plans
-
-1. Implementing SSR
-2. Containerization
-3. Bundling my UI Library (WIP)
 
 ## Notes
 
