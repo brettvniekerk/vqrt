@@ -1,5 +1,5 @@
 import { lazy } from "react";
 
-export const Dashboard = lazy(() => import("./pages/Dashboard"));
-export const About = lazy(() => import("./pages/About"));
+export const PageOne = lazy(() => import("./pages/PageOne"));
+export const PageTwo = lazy(() => import("./pages/PageTwo"));
 export const NotFound = lazy(() => import("./pages/NotFound"));
