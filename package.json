@@ -1,7 +1,21 @@
 {
   "name": "very-quick-react-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "description": "A Very Quick React Template",
+  "keywords": [
+    "template",
+    "react",
+    "vite",
+    "tailwindcss",
+    "typescript"
+  ],
+  "homepage": "https://github.com/brettvniekerk/vqrt",
   "license": "GPL-3.0-or-later",
+  "author": "@brettvniekerk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brettvniekerk/vqrt.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
@@ -30,5 +44,8 @@
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=16.14.2"
   }
 }

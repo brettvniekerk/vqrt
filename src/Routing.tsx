@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import { AppRoutes } from "./types/app";
+import PageOne from "./pages/PageOne";
 
-const PageOne = lazy(() => import("./pages/PageOne"));
 const PageTwo = lazy(() => import("./pages/PageTwo"));
 
 const Routing: AppRoutes = [
@@ -15,5 +15,5 @@ const Routing: AppRoutes = [
   }
 ];
 
-export const NotFound = lazy(() => import("./pages/NotFound"));
+export { default as NotFound } from "./pages/NotFound";
 export default Routing;
