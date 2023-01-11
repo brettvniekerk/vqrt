@@ -1,7 +1,7 @@
 {
   "name": "very-quick-react-template",
-  "version": "1.0.0",
-  "license": "GNU GPLv3",
+  "version": "1.0.1",
+  "license": "GPL-3.0-or-later",
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
