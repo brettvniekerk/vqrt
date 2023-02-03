@@ -9,12 +9,13 @@ The framework of choice is [React](https://reactjs.org), paired with [Vite](http
 ### Libraries
 
 - [React Router](https://reactrouter.com/en/main): routing library
-- [Tailwind](https://tailwindcss.com): styling library (uses [PostCSS](https://postcss.org) and [Autoprefixer](https://github.com/postcss/autoprefixer))
+- [Tailwind](https://tailwindcss.com): styling library (uses [PostCSS](https://postcss.org), [Autoprefixer](https://github.com/postcss/autoprefixer) and [Classnames](https://www.npmjs.com/package/classnames))
 - [Prettier](https://prettier.io): formatting and linting library (uses [Pretty Quick](https://github.com/azz/pretty-quick) and [Husky](https://typicode.github.io/husky/#/) for git hook integration)
 
 ### Extra Stuff
 
 - [React Spinners](https://www.davidhu.io/react-spinners): spinner library used for page transitions
+- [Tailwind Heropatterns](https://www.npmjs.com/package/tailwind-heropatterns): Tailwind library for SVG patterns
 
 ## Development
 
