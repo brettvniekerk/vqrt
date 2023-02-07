@@ -10,5 +10,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require("tailwind-heropatterns")]
+  plugins: [require("tailwind-heropatterns")({})]
 };
