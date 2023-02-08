@@ -8,7 +8,7 @@ const Navigation: React.FC = () => (
     <Suspense fallback={<Transition />}>
       <Routes>
         {Routing.map(({ path, element, props }) => (
-          <Route path={path} element={element} {...props} />
+          <Route path={path} element={element} {...props} key={path} />
         ))}
 
         <Route path="*" element={<NotFound />} />
