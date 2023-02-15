@@ -21,6 +21,8 @@ The framework of choice is [React](https://reactjs.org), paired with [Vite](http
 
 Run the project with `yarn dev`, and build it with `yarn build`. It will create a `dist` folder that you can serve with `yarn preview`, and/or host on your own server or platform.
 
+Replace the `DOMAIN_NAME` argument in the `postbuild` script with your website's URL to generate a valid `sitemap.xml` and `robots.txt`.
+
 ## Roadmap
 
 1. Implementing SSR

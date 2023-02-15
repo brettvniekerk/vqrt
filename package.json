@@ -1,6 +1,6 @@
 {
   "name": "very-quick-react-template",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Very Quick React Template",
   "keywords": [
     "template",
@@ -19,11 +19,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
-    "build": "tsc && vite build",
+    "build": "yarn sitemap && tsc && vite build",
     "preview": "vite preview",
     "lint": "pretty-quick --staged",
     "format": "prettier -w src",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sitemap": "ts-node --experimentalSpecifierResolution node ./scripts/sitemap.ts",
+    "postbuild": "ts-node --experimentalSpecifierResolution node ./scripts/postbuild.ts DOMAIN_NAME"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -44,6 +46,7 @@
     "pretty-quick": "^3.1.3",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss": "^3.2.4",
+    "ts-node": "^10.9.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   },
