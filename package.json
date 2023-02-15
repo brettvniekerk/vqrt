@@ -1,6 +1,6 @@
 {
   "name": "very-quick-react-template",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A Very Quick React Template",
   "keywords": [
     "template",
@@ -24,8 +24,8 @@
     "lint": "pretty-quick --staged",
     "format": "prettier -w src",
     "prepare": "husky install",
-    "sitemap": "ts-node --experimentalSpecifierResolution node ./scripts/sitemap.ts",
-    "postbuild": "ts-node --experimentalSpecifierResolution node ./scripts/postbuild.ts DOMAIN_NAME"
+    "sitemap": "ts-node ./scripts/sitemap.ts",
+    "postbuild": "ts-node ./scripts/postbuild.ts DOMAIN_NAME"
   },
   "dependencies": {
     "react": "^18.2.0",
