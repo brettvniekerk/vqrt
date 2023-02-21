@@ -9,6 +9,15 @@ export default ({ mode }: UserConfig) => {
     plugins: [react()],
     define: {
       "process.env": process.env
+    },
+    build: {
+      rollupOptions: {
+        output: {
+          entryFileNames: "assets/[name].js",
+          chunkFileNames: "assets/[name].js",
+          assetFileNames: "assets/[name].[ext]"
+        }
+      }
     }
   });
 };
