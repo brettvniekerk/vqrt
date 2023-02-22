@@ -10,6 +10,13 @@ export default ({ mode }: UserConfig) => {
     define: {
       "process.env": process.env
     },
+    optimizeDeps: {
+      force: true,
+      esbuildOptions: {
+        minify: true,
+        treeShaking: true
+      }
+    },
     build: {
       rollupOptions: {
         output: {
