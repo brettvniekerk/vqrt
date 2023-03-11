@@ -32,6 +32,7 @@
   },
   "include": ["./src/**/*"],
   "ts-node": {
+    "transpileOnly": true,
     "esm": true,
     "experimentalSpecifierResolution": "node"
   }

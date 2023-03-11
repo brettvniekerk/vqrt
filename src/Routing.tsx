@@ -15,7 +15,5 @@ const Routing: AppRoutes = [
   }
 ];
 
-export const RoutingWithoutElements = Routing.map(r => r.path);
-
 export { default as NotFound } from "./pages/NotFound";
 export default Routing;

@@ -1,10 +1,10 @@
-import { RoutingWithoutElements } from "../src/Routing";
 import fs from "fs";
+import GeneratedRoutes from "./generate-routes";
 
 const now = new Date().toISOString().slice(0, 10);
 const xmlHeader = `<?xml version="1.0" encoding="UTF-8"?>`;
 
-const urls = RoutingWithoutElements.map(
+const urls = GeneratedRoutes.map(
   (route, i) =>
     `
   <url>
