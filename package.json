@@ -1,6 +1,6 @@
 {
   "name": "very-quick-react-template",
-  "version": "1.0.16",
+  "version": "1.1.0",
   "description": "A Very Quick React Template",
   "keywords": [
     "template",
@@ -25,7 +25,8 @@
     "format": "prettier -w src",
     "prepare": "husky install",
     "sitemap": "ts-node ./scripts/sitemap.ts",
-    "postbuild": "ts-node ./scripts/postbuild.ts DOMAIN_NAME"
+    "postbuild": "ts-node ./scripts/postbuild.ts DOMAIN_NAME",
+    "test": "jest"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -34,6 +35,7 @@
     "react-spinners": "^0.13.7"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.1",
     "@types/node": "^18.11.13",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
@@ -41,11 +43,13 @@
     "autoprefixer": "^10.4.13",
     "classnames": "^2.3.2",
     "husky": "^8.0.2",
+    "jest": "^29.5.0",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "pretty-quick": "^3.1.3",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss": "^3.2.4",
+    "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
