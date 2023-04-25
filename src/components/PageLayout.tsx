@@ -5,5 +5,5 @@ type Props = {
 };
 
 export const PageLayout: React.FC<Props> = ({ children }) => (
-  <div className="w-screen h-screen min-h-screen bg-white">{children}</div>
+  <main className="w-screen h-screen min-h-screen bg-white">{children}</main>
 );
