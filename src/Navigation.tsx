@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Transition from "./pages/Transition";
-import Routing, { NotFound } from "./Routing";
+import Routing from "./Routing";
 
 const Navigation: React.FC = () => (
   <BrowserRouter>
@@ -11,7 +11,7 @@ const Navigation: React.FC = () => (
           <Route path={path} element={element} {...props} key={path} />
         ))}
 
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Suspense>
   </BrowserRouter>

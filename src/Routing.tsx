@@ -15,5 +15,4 @@ const Routing: AppRoutes = [
   }
 ];
 
-export { default as NotFound } from "./pages/NotFound";
 export default Routing;
