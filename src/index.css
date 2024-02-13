@@ -8,4 +8,13 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  min-width: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  color: black;
 }
